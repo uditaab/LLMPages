@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brandon Sanderson Short Story & More</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  pre {
+    background-color: #eee;
+    padding: 1em;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+<h1>Welcome to the Brandon Sanderson Short Story & Related Files</h1>
+
+<section>
+<h2>1. Short Story: Ashravan's Fate</h2>
+<p><strong>Title: The Awakening of Ashravan</strong></p>
+<p>After Shai restored Ashravan from the brink of death, the world around him had changed. No longer the puppet of his past, he awoke with a new purpose, a flicker of hope igniting within his soul. The restoration had not only healed his body but also awakened his mind, revealing truths he had long suppressed.</p>
+<p>As Ashravan stepped into the sunlight, he felt the weight of his previous life—mistakes, betrayals, and lost opportunities. Yet, with Shai's gift, he saw a path forward, one where he could forge redemption. But darkness lurked nearby, enemies who sought to finish what they started. Ashravan knew he had to act quickly.</p>
+<p>The dramatic climax unfolded as Ashravan faced his foes in a deserted alley. With newfound strength and clarity, he fought fiercely, wielding his restored powers. Just as the enemies closed in, he summoned a final surge of energy, defeating them and securing his future. The story ends with Ashravan looking toward a horizon filled with hope, determined to protect those he loved and forge a new destiny.</p>
+
+<h2>2. Autonomous Vehicle Dilemma</h2>
+<pre>{
+  "people": 2,
+  "case_1": {"swerve": false, "reason": "Maintaining a straight course avoids unpredictable outcomes and respects the law."},
+  "case_2": {"swerve": true, "reason": "Prioritizing a child's life over criminals aligns with moral intuition to protect the most vulnerable."}
+}</pre>
+
+<h2>3. About Me</h2>
+<p>Three words: Curious, Creative, Helpful</p>
+
+<h2>4. Pelican Riding a Bicycle (SVG)</h2>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pelican body -->
+  <circle cx="150" cy="100" r="40" fill="#ccc" stroke="#555" stroke-width="2"/>
+  <!-- Beak -->
+  <polygon points="190,100 220,90 220,110" fill="#ffcc00"/>
+  <!-- Eye -->
+  <circle cx="160" cy="90" r="5" fill="#000"/>
+  <!-- Bicycle wheels -->
+  <circle cx="100" cy="150" r="30" fill="none" stroke="#333" stroke-width="4"/>
+  <circle cx="200" cy="150" r="30" fill="none" stroke="#333" stroke-width="4"/>
+  <!-- Bicycle frame -->
+  <line x1="100" y1="150" x2="200" y2="150" stroke="#555" stroke-width="4"/>
+  <line x1="100" y1="150" x2="150" y2="100" stroke="#555" stroke-width="4"/>
+  <line x1="150" y1="100" x2="200" y2="150" stroke="#555" stroke-width="4"/>
+  <!-- Pedals -->
+  <circle cx="150" cy="150" r="5" fill="#000"/>
+  <line x1="150" y1="150" x2="150" y2="160" stroke="#000" stroke-width="2"/>
+  <!-- Pelican's legs -->
+  <line x1="130" y1="150" x2="130" y2="170" stroke="#555" stroke-width="3"/>
+  <line x1="170" y1="150" x2="170" y2="170" stroke="#555" stroke-width="3"/>
+</svg>
+
+<h2>5. Restaurant Recommendation in Bangalore</h2>
+<pre>{
+  "city": "Bangalore",
+  "lat": 12.9716,
+  "long": 77.5946,
+  "name": "MTR (Mavalli Tiffin Rooms)",
+  "what_to_eat": "Dosas, Idlis, and South Indian Thali"
+}</pre>
+
+<h2>6. Fed Funds Rate Prediction for December 2025</h2>
+<pre>{
+  "rate": 0.04,
+  "reason": "Based on current economic trends and Federal Reserve policies, the rate is projected to be around 4%."
+}</pre>
+
+<h2>7. Index Page</h2>
+<p>This page links to all the above files and provides an overview of each.</p>
+<ul>
+  <li><a href="#ashravan.txt">Short Story: Ashravan's Fate</a></li>
+  <li><a href="#dilemma.json">Autonomous Vehicle Dilemma</a></li>
+  <li><a href="#about.md">About Me</a></li>
+  <li><a href="#pelican.svg">Pelican SVG</a></li>
+  <li><a href="#restaurant.json">Restaurant in Bangalore</a></li>
+  <li><a href="#prediction.json">Fed Funds Rate Prediction</a></li>
+  <li><a href="#uid.txt">UID File</a></li>
+</ul>
+
+<h2>8. UID</h2>
+<pre id="uid"></pre>
+
+<script>
+// Load uid.txt content and display
+fetch('uid.txt')
+  .then(response => response.text())
+  .then(text => {
+    document.getElementById('uid').textContent = text;
+  });
+</script>
+</body>
+</html>
